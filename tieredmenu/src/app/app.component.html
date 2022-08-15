@@ -1,5 +1,5 @@
 <h5>Inline</h5>
-<p-tieredMenu [model]="items"></p-tieredMenu>
+<p-tieredMenu [model]="items" appendTo="body"></p-tieredMenu>
 
 <h5>Popup</h5>
 <button
@@ -10,4 +10,9 @@
   label="Show"
   (click)="menu.toggle($event)"
 ></button>
-<p-tieredMenu #menu [model]="items" [popup]="true"></p-tieredMenu>
+<p-tieredMenu
+  #menu
+  [model]="items"
+  [popup]="true"
+  appendTo="body"
+></p-tieredMenu>
